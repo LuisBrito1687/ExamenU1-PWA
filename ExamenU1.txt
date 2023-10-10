@@ -1,0 +1,37 @@
+Parte 1: Preguntas Teóricas
+
+1. ¿Qué es una promesa en JavaScript? Describe su propósito y cómo se utilizan.
+Una Promesa es un objeto que ayuda a efectuar el termino exitoso o erróneo de una 
+función asíncrona.
+
+2. Explica las diferencias entre resolve y reject en una promesa.
+Sirven para determinar la resolución de una promesa, ya sea con éxito (resolve) 
+o rechazo (reject) si es que ocurre un error en la promesa. 
+
+3. ¿Qué es el método .then() en una promesa y cuál es su propósito?
+Sirve para dar paso a resultados de una función despues de un tiempo definido usando por ejemplo
+el método setTimeout(); por así decir el método .then(), es el que se hace después del resultado de una función. 
+
+4. Explica el ciclo de vida de un service worker
+Tiene 5 fases:
+- Instalando: Que es cuando se encuantra en instalción, pero puede dar un error y finalizar
+- Instalado: Cuando se termina de instalar 
+- Activación: Es el proceso de activación del service worker
+- Activado: Es cuando se ha activado exitosamente el service worker
+- Ocioso: Se ejecuta el service worker cuando se está en modo espera o ausente. 
+
+5. ¿Qué es una PWA?
+Es básicamente lo mejor de una app web y de una app mobile es decir, usa lo mejor de una app web y 
+de una app mobile, también envía notificaciones push, está pensada en first mobile, y cuenta con modo offline.
+
+6. Escribe la instrucción para verificar que el SW es soportado
+if(navigator.serviceWorker){
+    navigator.serviceWorker.register('sw.js')
+}
+
+7. Escribe el método utilizado para devolver un resultado cuando escuchamos un evento fetch.
+event.respondWith().
+
+8. Describe qué es el APP SHELL
+Se utiliza para cargar datos de una PWA y mostrarlas más rápido en la interfaz de usuario, es decir, 
+el APP SHELL se encarga de separar la interfaz de una appp web de su contenido y datos.
